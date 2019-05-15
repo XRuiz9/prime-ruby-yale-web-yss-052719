@@ -3,6 +3,10 @@ def prime?(num)
     num = num * -1
   end
 
+  if (num == 1)
+    return false
+  end
+
   range = (2..Integer.sqrt(num))
   range.each do |value|
 
