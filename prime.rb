@@ -3,7 +3,9 @@ def prime?(num)
   range.each do |value|
 
     if (value < 0)
-      value = value * -1
+      if (num % (value * -1) == 0)
+        return false
+      end
     end
 
     if (num % value == 0)
